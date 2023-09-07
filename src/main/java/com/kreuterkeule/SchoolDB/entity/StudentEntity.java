@@ -37,7 +37,7 @@ public class StudentEntity {
     }
 
     public String get_the_class() { // is used in JSON conversion
-        return this._class.get_name();
+        return (this._class == null) ? null : this._class.get_name();
     }
 
 }
